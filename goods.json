@@ -1,0 +1,51 @@
+{
+  "1234": {
+      "name" : "Яблоки",
+      "cost" : 44.2,
+      "description" : "Сочные и спелые",
+      "order" : 3,
+      "img": "apple.png"
+  },
+  "1235": {
+    "name" : "Абрикосы",
+    "cost" : 35.5,
+    "description" : "Сладкие и спелые",
+    "order" : 5,
+    "img": "apricot.png"
+  },
+  "1236": {
+    "name" : "Апельсины",
+    "cost" : 44.2,
+    "description" : "Сочные и спелые",
+    "order" : 4,
+    "img": "orange.png"
+  },
+  "1237": {
+    "name" : "Персики",
+    "cost" : 44.2,
+    "description" : "Сочные и спелые",
+    "order" : 2,
+    "img": "peach.png"
+  },
+  "1238": {
+    "name" : "Груши",
+    "cost" : 44.2,
+    "description" : "Сочные и спелые",
+    "order" : 1,
+    "img": "pear.png"
+  },
+  "1239": {
+    "name" : "Карамбола",
+    "cost" : 44.2,
+    "description" : "Сочные и спелые",
+    "order" : 7,
+    "img": "starfruit.png"
+  },
+  "1240": {
+    "name" : "Арбуз",
+    "cost" : 44.2,
+    "description" : "Сладкий красный",
+    "order" : 8,
+    "img": "watermelon.png"
+  }
+}
