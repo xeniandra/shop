@@ -15,35 +15,35 @@
   },
   "1236": {
     "name" : "Апельсины",
-    "cost" : 44.2,
-    "description" : "Сочные и спелые",
+    "cost" : 40,
+    "description" : "Сочные и сладкие",
     "order" : 4,
     "img": "orange.png"
   },
   "1237": {
     "name" : "Персики",
-    "cost" : 44.2,
-    "description" : "Сочные и спелые",
+    "cost" : 26.5,
+    "description" : "Просто пэрсик муа",
     "order" : 2,
     "img": "peach.png"
   },
   "1238": {
     "name" : "Груши",
-    "cost" : 44.2,
-    "description" : "Сочные и спелые",
+    "cost" : 30.2,
+    "description" : "Сладкие желтые",
     "order" : 1,
     "img": "pear.png"
   },
   "1239": {
     "name" : "Карамбола",
-    "cost" : 44.2,
-    "description" : "Сочные и спелые",
+    "cost" : 50,
+    "description" : "Просто вкусно",
     "order" : 7,
     "img": "starfruit.png"
   },
   "1240": {
     "name" : "Арбуз",
-    "cost" : 44.2,
+    "cost" : 80,
     "description" : "Сладкий красный",
     "order" : 8,
     "img": "watermelon.png"
