@@ -40,6 +40,13 @@ function addToCart(){
         cart[id]++; //если такой товар есть, увеличиваю на 1
     }
     showMiniCart();
+    saveCart();
+}
+
+
+function saveCart(){
+    //сохранение корзины в localStorage
+    localStorage.setItem('cart', JSON.stringify(cart));//коризну в строку
 }
 
 function showMiniCart(){
@@ -51,6 +58,16 @@ function showMiniCart(){
     $('.mini-cart').html(out);
 }
 
+function loadCart(){
+    //проверяю есть ли в localStorage запись cart
+    if(localStorage.getItem('cart')){
+        //если есть - расшифровываю и записываю в переменную cart
+        cart = JSON.parse(localStorage.getItem('cart'));
+        showMiniCart();
+    }
+}
+
 $(document).ready(function () {
     init();
+    loadCart();
 });
