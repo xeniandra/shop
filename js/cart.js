@@ -26,11 +26,15 @@ function showCart(){
 			out += ``;
 			out += `<img src="images\\${goods[id].img}">`;
 			out += ` ${goods[id].name  } `;
+			out += `<button data-id="${id}" class="minus-goods">-</button>`;
 			out += ` ${cart[id]}  `;
+			out += `<button data-id="${id}" class="plus-goods">+</button>`;
 			out += ` <br>`;
 		}
 		$('.main-cart').html(out);
 		$('.del-goods').on('click', delGoods);
+		$('.plus-goods').on('click', plusGoods);
+		$('.minus-goods').on('click', minusGoods);
 	});
 }
 }
@@ -43,6 +47,27 @@ function delGoods(){
 	showCart();
 }
 
+function plusGoods(){
+	//добавляет товар в корзине
+	var id = $(this).attr('data-id');
+	cart[id]++;
+	saveCart();
+	showCart();
+}
+
+function minusGoods(){
+	//уменьшает кол-во товара в корзине
+	var id = $(this).attr('data-id');
+	if(cart[id] == 1){
+		delete cart[id];
+	}
+	else{
+		cart[id]--;
+	}
+	
+	saveCart();
+	showCart();
+}
 
 function saveCart(){
     //сохранение корзины в localStorage
