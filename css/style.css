@@ -53,3 +53,8 @@ img{
     display: block;
     clear: both;
 }
+
+/*cart*/
+.main-cart img{
+    width: 48px;
+}
