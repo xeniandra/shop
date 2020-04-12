@@ -29,7 +29,7 @@ function showCart(){
 			out += `   <button data-id="${id}" class="minus-goods">-</button>  `;
 			out += ` ${cart[id]}  `;
 			out += `   <button data-id="${id}" class="plus-goods">+</button>  `;
-			out += cart[id]*goods[id].cost;
+			out += parseFloat(cart[id]*goods[id].cost).toFixed(2);
 			out += ` <br>`;
 		}
 		$('.main-cart').html(out);
@@ -86,10 +86,9 @@ function sendEmail(){
 	var ename = $('#ename').val();
 	var email = $('#email').val();
 	var ephone = $('#ephone').val();
-	if(ename!='' && email!='' && ephone!='')
-	{
+	if(ename!='' && email!='' && ephone!=''){
 		if(isEmpty(cart)){
-			$.post{
+			$.post(
 				"core/mail.php",
 				{
 					"ename" : ename,
@@ -100,7 +99,7 @@ function sendEmail(){
 				function(data){
 					console.log(data);
 				}
-			};
+			);
 		}
 		else{
 			alert('Корзина пуста');
